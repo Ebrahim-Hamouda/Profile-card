@@ -1,0 +1,94 @@
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: hsl(185, 75%, 39%);
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+.papa {
+    max-width: 400px;
+    position: relative;
+    margin: 210px auto;
+    background-color: white;
+    border-radius: 10px;
+    min-width: 358px;
+}
+img:first-of-type {
+    max-width: 100%;
+    min-width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+img:last-of-type {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 26%;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+.info1 {
+    text-align: center;
+    margin-top: 50px;
+}
+.info1 .first-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info1 .first-line p:first-child {
+    margin: 0 10px 0 0;
+    font-weight: 600;
+    font-size: 18px;
+}
+.info1 .first-line p:last-child {
+    color: hsl(0, 0%, 59%);
+    font-size: 17px;
+}
+.info1 > p:last-child {
+    margin: -10px 0 0;
+    color: hsl(0, 0%, 59%);
+}
+.info2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid hsl(0deg 0% 90%);
+}
+.info2 .box {
+    text-align: center;
+    padding-bottom: 30px;
+}
+.info2 .box p:first-child {
+    margin: 0px 0 3px 0;
+    font-weight: 600;
+    font-size: 19px;
+}
+.info2 .box p:last-child {
+    margin: 0;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: hsl(227, 10%, 46%);
+}
