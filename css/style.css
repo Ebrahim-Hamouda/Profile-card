@@ -1,6 +1,8 @@
 body {
     font-family: 'Kumbh Sans', sans-serif;
     background-color: hsl(185, 75%, 39%);
+    position: relative;
+    overflow: hidden;
 }
 .container {
     padding-left: 15px;
@@ -34,13 +36,13 @@ body {
     border-radius: 10px;
     min-width: 358px;
 }
-img:first-of-type {
+img:first-of-type:not(.lol1 , .lol2) {
     max-width: 100%;
     min-width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-img:last-of-type {
+img:last-of-type:not(.lol1 , .lol2) {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -91,4 +93,19 @@ img:last-of-type {
     font-size: 11px;
     letter-spacing: 1px;
     color: hsl(227, 10%, 46%);
+}
+.lol1 {
+    position: absolute;
+    top: -140%;
+    left: -24%;
+    transform: rotate(62deg);
+    z-index: -1;
+}
+.lol2 {
+    position: absolute;
+    top: 54%;
+    right: -24%;
+    transform: rotate(6deg);
+    z-index: -1;
+
 }
